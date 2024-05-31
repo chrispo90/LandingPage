@@ -6,6 +6,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    transition: all .5s ease;
 }
 
 header{
@@ -33,6 +34,10 @@ li {
     font-size: 18px;
 }
 
+.navbar li:hover{
+    transform: translateY(-2px);
+}
+
 .nav-logo,
 .hero-left h1 {
     color: #F9FaF8;
@@ -56,6 +61,13 @@ li {
     font-size: 18px;
     font-weight: 500;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.hero-left button:hover{
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
 }
 
 .hero{
@@ -72,8 +84,113 @@ li {
 
 .placeholder{
     background-color: gray;
-    min-width: 400px;
-    width: auto;
+    width: 400px;
     height: 200px;
 }
 
+.random{
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding-bottom: 48px;
+}
+
+.feature-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.feature-item{
+    padding: 0 25px;
+}
+
+.feature-img-placeholder{
+    width: 150px;
+    height: 150px;
+    border: #3882F6 5px solid;
+    border-radius: 24px;
+}
+
+.feature-text{
+    max-width: 150px;
+    color: rgb(75, 75, 75);
+}
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 75px 150px;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.sign{
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.cta-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E5E7EB;
+}
+
+.cta-frame{
+    margin: 150px;
+    padding: 24px 50px;
+    width: 80%;
+    background-color: #3882F6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 5px 10px 2px rgba(62, 63, 151, 0.514);
+}
+
+.cta-right button{
+    background-color: transparent;
+    color: #E5E7EB;
+    padding: 5px 20px;
+    border: #E5E7EB 2px solid;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 50px;
+}
+
+@media (max-width: 900px) {
+    .placeholder{
+        width: 200px;
+        height: 100px;
+    }
+    .feature-img-placeholder{
+        height: 100px;
+        width: 100px;
+    }
+}
